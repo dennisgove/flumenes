@@ -4,6 +4,6 @@ jdk:
   - oraclejdk8
 
 # Required because restez is not yet in maven central
-before_script:
+install:
   - git clone https://github.com/dennisgove/restez.git /tmp/restez
   - (cd /tmp/restez && mvn clean install)
